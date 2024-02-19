@@ -5,7 +5,7 @@ Developed by Daniel Camacho-Gomez, University of Zaragoza. E-mail: dcamacho@uniz
 
 # Description: 
 
-Open the file "Main.m", add the data from the experiments (several examples are provided), and run the code to start optimization. The results will be saved in the "Results" folder.
+Open the file "MainOPT.m", add the data from the experiments (several examples are provided), and run the code to start optimization. The results will be saved in the "Results" folder.
 
 "migrationModel.m" contains the computational model.
 
