@@ -10,4 +10,4 @@ Open the file "MainOPT.m", add the data from the experiments (several examples a
 
 "migrationModel.m" contains the computational model.
 
-Use "Postprocessing.m" to plot 3D trajectories
+Use "Postprocessing.m" to plot 3D trajectories.
