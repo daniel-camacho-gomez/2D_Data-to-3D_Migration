@@ -1,8 +1,5 @@
 function [D_rat_sim,sigma_sim,desp_sim] = migrationModel(gamma_phi,gamma_theta,v_mean,eta,n_cells,t_assay,Dt_photo,epoch,iter)
 
-
-tic
-
 for sim=1:n_cells   
 
     %...Time steps
@@ -181,7 +178,6 @@ desp_sim = sqrt(x_mean^2+y_mean^2);
 savedir = fullfile(cd, 'Results');
 fname = sprintf('ExampleSim_Epoch_%d_Iter_%d.mat', epoch, iter);
 save(fullfile(savedir,fname));
-toc
 end
         
 
