@@ -93,6 +93,7 @@ desp_sim  = zeros(N_iter,1);
 disp("------------------------------------------------------------------------------------")
 disp("                                        OPTIMIZING  " );
 disp("------------------------------------------------------------------------------------")
+tic
 for epoch = 1:N_epoch 
     for iter = 1:N_iter
         
@@ -111,13 +112,17 @@ for epoch = 1:N_epoch
     [total_best, best_epoch]      = max(max_fitness);
     best_pob(epoch) = id_max; 
     
+    elap_h =  fix(toc/3600);
+    elap_m =  fix(toc/60)-60*fix(toc/3600);
+    elap_s =  toc-60*elap_m-3600*elap_h;
     disp("------------------------------------------------------------------------------------")
     disp("------------------------------------------------------------------------------------")
-    disp("                                               Epoch:  " + epoch);
-    disp("                                          Best Epoch:  " + best_epoch);
-    disp("                                  Total best fitness:  " + max(max_fitness));
-    disp("                  Previous epocheration best fitness:  " + prev_fitness); 
-    disp("                   Current epocheration best fitness:  " + max(fitness));
+    disp("                                           Epoch:  " + epoch);
+    disp("                                      Best Epoch:  " + best_epoch);
+    disp("                              Total lowest error:  " + (1-max(max_fitness)));
+    disp("                     Previous epoch lowest error:  " + (1-prev_fitness)); 
+    disp("                      Current epoch lowest error:  " + (1-max(fitness)));
+    disp("                              Total elapsed time:  " + elap_h + ' h ' +elap_m+ ' min ' +elap_s+ ' s');
     disp("------------------------------------------------------------------------------------")
     disp("------------------------------------------------------------------------------------")
 
@@ -162,7 +167,7 @@ disp("                                END OF OPTIMIZATION       " );
 figure
 plot(1:length(gamma_phi_best),gamma_phi_best)
 xlabel('Epoch','Interpreter','Latex','FontSize',15)
-ylabel('$\gamma_{\phi}$','Interpreter','Latex','FontSize',15)
+ylabel('$\gamma_{\varphi}$','Interpreter','Latex','FontSize',15)
 
 figure
 plot(1:length(gamma_theta_best),gamma_theta_best)
