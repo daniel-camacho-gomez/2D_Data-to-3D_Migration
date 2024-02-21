@@ -68,7 +68,7 @@ eta = eta_six;
 %----------Optimization--------- 
 %-------------------------------  
 %...steps and iteration data
-N_epoch = 2; 
+N_epoch = 500; 
 N_iter  = 4;
 
 %....calibration parameters 
