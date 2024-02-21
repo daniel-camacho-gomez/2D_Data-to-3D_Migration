@@ -1,6 +1,7 @@
 # 2D_Data-to-3D_Migration
 
-A Matlab code for predicting 3D cell migration from 2D data 
+A Matlab code for predicting 3D cell migration from 2D data.
+
 Developed by Daniel Camacho-Gomez, University of Zaragoza. E-mail: dcamacho@unizar.es danielcamachogomez@hotmail.com
 
 # Description: 
