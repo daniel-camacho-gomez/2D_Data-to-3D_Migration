@@ -11,7 +11,7 @@ Open the file "MainOPT.m", add the data from the experiments (several examples a
 
 "migrationModel.m" contains the computational model.
 
-Use "Postprocessing.m" to plot 3D trajectories.
+Use "Postprocessing.m" to plot 3D trajectories after loading a result file from the "Results" folder. 
 
 # Reference 
 Camacho-Gomez, Daniel, et al. "An agent-based method to estimate 3D cell migration trajectories from 2D measurements: Quantifying and comparing T vs CAR-T 3D cell migration." Computer Methods and Programs in Biomedicine 255 (2024): 108331.
